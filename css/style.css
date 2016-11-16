@@ -1,9 +1,5 @@
 /*Nasir Uddin*/
 
-/*colors
-
-rgba(19, 128, 0, 254)
-*/ 
 
 html,
 body {
@@ -607,9 +603,7 @@ br {
         height: 65px;
     }
     
-    .num {
-        margin-left: 0;
-    }
+    
     
     .fa-facebook-square,
     .fa-twitter-square,
@@ -630,7 +624,7 @@ br {
 
 @media only screen and (max-width: 956px) {
     
-    .fa.fa-arrow-down {
+    .fa .fa-arrow-down {
         display: none;
     }
     
@@ -648,42 +642,38 @@ br {
     .testimonial {
         margin-top: 2.5rem;
         padding-bottom: 2.5rem;
-    }
-    
-    .num {
-        margin-left: 0 px;
-    }
+    }   
+  
 
     .jadzia-img,
     .feringi-img,
     .picard-img {
         width: 65px;
         height: 65px;
-    }   
-    
-    
+    }
+       
 }
 
-@media only screen and (max-width: 592px) {
+@media only screen and (max-width: 588px) {
     
     .testimonial {
         margin-top: 2.5rem;
         padding-bottom: 2.5rem;
     }
     
-    .num {
-        margin-left: 0.1px;
-    }
+   
     .section-timeline {
         font-size: 70%;
     }
     
     .card img {
-        height: 90px;
-        width: 100%;
+        height: 200px;
+        width: 90%;
         transition: 0.9s
-}
-}
+    }
+   }
+
+
 
 @media only screen and (max-width: 544px) {
     
@@ -713,11 +703,8 @@ br {
     .testimonial {
         margin-top: 2.5rem;
         padding-bottom: 2.5rem;
-    }
-    
-    .num {
-        margin-left: 0.1px;
     }    
+      
 }
 
 @media only screen and (max-width: 320px) {

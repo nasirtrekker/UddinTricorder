@@ -1,6 +1,6 @@
 //Nasir Uddin
 
-// to fix the menubar on top always during the scrolling
+// to fix the menu/navigation bar on top  during the scrolling
 $(document).ready(function(){
 
     $(window).scroll(function(){
@@ -11,61 +11,22 @@ $(document).ready(function(){
         if ($(window).scrollTop() < 641) {
             $('.navbar').removeClass('navbar-fixed-top');
         }
-
     });
 });
 
-//slow scrolling effect for navigation bar
+// Make a smooth scroll effect for different buttons
 
-
-$(".navbar-dark ul li a[href^='#']").on('click', function(e) {
-
-   e.preventDefault();
-
-   var hash = this.hash;
-
-   $('html, body').animate({
-       scrollTop: $(hash).offset().top
-     }, 350, function(){
-
-       window.location.hash = hash;
-     });
-
+$('a[href^="#"]').bind('click.smoothscroll',function (e) {
+    e.preventDefault();
+    var target = this.hash;
+    $target = $(target);
+    $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+    }, 754, 'swing', function () {
+        window.location.hash = target;
+    });
 });
 
-//slow scrolling effect parallax section
-
-$("#section-parallax .col-sm-8 a[href^='#']").on('click', function(e) {
-
-   e.preventDefault();
-
-   var hash = this.hash;
-
-   $('html, body').animate({
-       scrollTop: $(hash).offset().top
-     }, 350, function(){
-
-       window.location.hash = hash;
-     });
-
-});
-
-// slow scrolling effect footer button
-
-$(".footer .scroll-to-top-button a[href^='#']").on('click', function(e) {
-
-   e.preventDefault();
-
-   var hash = this.hash;
-
-   $('html, body').animate({
-       scrollTop: $(hash).offset().top
-     }, 300, function(){
-
-       window.location.hash = hash;
-     });
-
-});
 
 // waypoint animation
 $('.js-wp-1').waypoint(function(direction) {
@@ -91,6 +52,70 @@ $('.js-wp-4').waypoint(function(direction) {
 }, {
     offset: '50%'
 });
+
+
+
+
+ // (no need if smooth scroll fuction (avove mentioned) applied
+// slow scrolling effect for navigation bar
+/*
+
+$(".navbar-dark ul li a[href^='#']").on('click', function(e) {
+
+   e.preventDefault();
+
+   var hash = this.hash;
+
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 350, function(){
+
+       window.location.hash = hash;
+     });
+
+});
+
+
+//slow scrolling effect parallax section
+//(no need if smooth scroll fuction (avove mentioned) applied
+
+
+$("#section-parallax .col-sm-8 a[href^='#']").on('click', function(e) {
+
+   e.preventDefault();
+
+   var hash = this.hash;
+
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 350, function(){
+
+       window.location.hash = hash;
+     });
+
+});
+
+
+// slow scrolling effect footer button
+// (no need if smooth scroll fuction (avove mentioned) applied
+
+
+
+ $(".footer .scroll-to-top-button a[href^='#']").on('click', function(e) {
+
+   e.preventDefault();
+
+   var hash = this.hash;
+
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 300, function(){
+
+       window.location.hash = hash;
+     });
+
+});
+*/
 
 
 
