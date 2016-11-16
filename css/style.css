@@ -226,7 +226,7 @@ body {
 
 .timeline > li:before,
 .timeline > li:after {
-		content: "";
+		content: " ";
 		display: table;
 }
 
@@ -247,7 +247,7 @@ body {
 
 .timeline p {
 		font-family: 'FINALOLD';
-		font-weight: 500;
+		font-weight: 400;
 }
 
 
@@ -581,14 +581,6 @@ footer p {
     animation-delay: 1.2s;
 }
 
-.js-wp-5 {
-    opacity: 0;
-}
-
-.js-wp-5.animated {
-    opacity: 1;
-        animation-delay: 0.8s;
-}
 
 br {
     display: none;
@@ -659,7 +651,7 @@ br {
     }
     
     .num {
-        margin-left: 0.1px;
+        margin-left: 0 px;
     }
 
     .jadzia-img,
@@ -667,11 +659,8 @@ br {
     .picard-img {
         width: 65px;
         height: 65px;
-    }
+    }   
     
-    .num {
-        margin-left: 0;
-    }
     
 }
 
@@ -688,7 +677,6 @@ br {
     .section-timeline {
         font-size: 70%;
     }
-
     
     .card img {
         height: 90px;
@@ -702,11 +690,8 @@ br {
     .testimonial {
         margin-top: 2.5rem;
         padding-bottom: 2.5rem;
-    }
-    
-    .num {
-        margin-left: 0.1px;
-    }
+    }   
+  
 
     .section-timeline {
         font-size: 70%;
@@ -716,8 +701,33 @@ br {
         height: 200px;
         width: 80%;
         transition: 0.9s;
-    }      
+    }  
+
+    br {
+        display: block;
+    }    
 }
+
+@media only screen and (max-width: 480px) {
+    
+    .testimonial {
+        margin-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    
+    .num {
+        margin-left: 0.1px;
+    }    
+}
+
+@media only screen and (max-width: 320px) {
+
+    .timeline-title {
+        font-size: 90%;
+        margin-left: 0.1px;
+    }    
+}
+
 
 @media only screen and (max-height: 865px) {
     .wall-sticker {

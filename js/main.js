@@ -5,10 +5,10 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
 
-        if ($(window).scrollTop() > 870) {
+        if ($(window).scrollTop() > 640) {
             $('.navbar').addClass('navbar-fixed-top');
         }
-        if ($(window).scrollTop() < 871) {
+        if ($(window).scrollTop() < 641) {
             $('.navbar').removeClass('navbar-fixed-top');
         }
 
@@ -33,7 +33,7 @@ $(".navbar-dark ul li a[href^='#']").on('click', function(e) {
 
 });
 
-//slow scrolling effect parallax button
+//slow scrolling effect parallax section
 
 $("#section-parallax .col-sm-8 a[href^='#']").on('click', function(e) {
 
@@ -92,11 +92,7 @@ $('.js-wp-4').waypoint(function(direction) {
     offset: '50%'
 });
 
-$('.js-wp-5').waypoint(function(direction) {
-    $('.js-wp-5').addClass('animated slideInUp');
-}, {
-    offset: '50%'
-});
+
 
 
 
