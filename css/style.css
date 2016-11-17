@@ -291,8 +291,6 @@ body {
     padding: 140px 0;
     background-size: cover;
     color: white;
-
-
 }
 
 /* section cards */
@@ -420,13 +418,13 @@ blockquote {
 
 /* section contact */
 
-.section-contact {
-    background-color: white;
-    padding: 10rem 0;
-    font-family: Roddenberry;
+#content .big-title {
+    color: green;
+    text-align: left;
 }
 
-#contact .control-label {
+
+#content .control-label {
     font-size: 20px;
     line-height: 80%;
     margin-top: 10px;
@@ -434,21 +432,15 @@ blockquote {
 }
 
 
+
 .form-control {
     font-size: 17px;
     font-family: Roddenberry;
 }
 
-.form-horizontal {
-    padding-top: 5rem
-}
 
-textarea:focus, input:focus {
-    border-color: rgba(19, 128, 35, 0.55): important;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.74) insert, 0 0 1px rgba(231, 76, 59, 0.06) : important;
-}
 
-#contact .btn .btn-success {
+#content .btn .btn-success {
     background-color: rgba(19, 128, 36, 1);
     border: 1px solid rgba(19, 128, 36, 1);
     border-radius: 4px;
@@ -460,7 +452,7 @@ textarea:focus, input:focus {
 
 }
 
-#contact .btn .btn-success:hover {
+#content .btn .btn-success:hover {
     background-color: rgba(19, 128, 36, 0.9);
     border: 1px solid rgba(19, 128, 36, 4);
     transition: 0.4s;
