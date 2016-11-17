@@ -551,22 +551,23 @@ footer p {
     opacity: 1;
 }
 
-.js-wp-2 .js-wp-3 {
+.js-wp-2 .js-wp-3 .js-wp-5 {
     opacity: 0;
-    animation-delay: 0.7s;
+    animation-duration: 4s;
 }
 
-.js-wp-2.animated .js-wp-3.animated {
+.js-wp-2.animated .js-wp-3.animated .js-wp-5 {
     opacity: 1;
 }
 
 .js-wp-4 {
     opacity: 0;
+    animation-delay: 1.2s;
 }
 
 .js-wp-4.animated {
     opacity: 1;
-    animation-delay: 1.2s;
+    
 }
 
 
@@ -593,8 +594,7 @@ br {
     .picard-img {
         width: 65px;
         height: 65px;
-    }
-    
+    }    
     
     
     .fa-facebook-square,

@@ -28,6 +28,7 @@ $('a[href^="#"]').bind('click.smoothscroll',function (e) {
 });
 
 
+
 // waypoint animation
 $('.js-wp-1').waypoint(function(direction) {
     $('.js-wp-1').addClass('animated fadeInDown');
@@ -53,6 +54,11 @@ $('.js-wp-4').waypoint(function(direction) {
     offset: '50%'
 });
 
+$('.js-wp-5').waypoint(function(direction) {
+    $('.js-wp-4').addClass('animated fadeInDownBig');
+}, {
+    offset: '70%'
+});
 
 
 
